@@ -1,5 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html
+  lang="en"
+  class="max-xl:text-[0.9rem] max-lg:text-[0.85rem] max-md:text-[0.80rem] max-sm:text-[0.7rem]"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,45 +12,341 @@
       href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Gloria+Hallelujah&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+HK:wght@100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Felipe's Sections</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              montserrat: ["Montserrat"],
+              colors: {
+                clifford: "#da373d",
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <title>Felipe's Sections</title>
   </head>
-  <body>
+  <body class="font-montserrat">
     <!-- NANDINI'S SECTIONS -->
 
     <!-- DENIS' SECTIONS -->
 
     <!-- FELIPE'S SECTIONS -->
-    <section>
-      <h2 class="font-extrabold font-montserrat text-4xl leading-[56px]">
+    <section class="max-w-[1920px] px-[3.2rem] mx-auto mb-[96px]">
+      <h2 class="font-extrabold text-4xl leading-[56px] mb-16 text-center">
         Our Popular Residences
       </h2>
-      <div>
-        <img src="img/popular-1.png" alt="Beautiful house with a pool" />
-        <div class="flex flex-col gap-6 p-6">
-          <div class="flex">
-            <img src="img/location.png" alt="" />
-            <span class="font-bold font-montserrat text-xl leading-normal"
-              >San Francisco, California</span
-            >
-          </div>
-          <div class="flex gap-x-9">
-            <div class="flex">
-              <img src="img/rooms.png" alt="" />
-              <span>4 Rooms</span>
+      <div class="grid grid-cols-3 gap-16">
+        <div class="bg-[#DDC7BB] overflow-auto rounded-[18px]">
+          <img
+            src="img/popular-1.png"
+            class="w-full"
+            alt="Beautiful house with a pool"
+          />
+          <div class="flex flex-col gap-6 p-6">
+            <div class="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6 max-w-full h-auto"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="font-bold font-montserrat text-xl leading-normal"
+                >San Francisco, California</span
+              >
             </div>
-            <div class="flex">
-              <img src="img/size.png" alt="" />
-              <span>3,500 sq ft</span>
+            <div class="flex gap-x-9">
+              <div class="flex gap-2">
+                <img
+                  src="img/rooms.png"
+                  class="bg-white p-[2px] rounded-[4px] object-contain"
+                  alt=""
+                />
+                <span>4 Rooms</span>
+              </div>
+              <div class="flex gap-2">
+                <img
+                  src="img/size.png"
+                  class="bg-white p-[2px] rounded-[4px] object-contain"
+                  alt=""
+                />
+                <span>3,500 sq ft</span>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <button
+                class="font-semibold text-sm px-5 py-2.5 rounded-lg bg-[#2B1B12] text-white"
+              >
+                Sign up
+              </button>
+              <span class="font-bold text-2xl leading-normal text-[#4F352]"
+                >$2,5000,000</span
+              >
             </div>
           </div>
-          <div class="flex justify-between">
-            <button
-              class="font-semibold text-sm px-5 py-2.5 rounded-lg bg-[#2B1B12] text-white"
-            >
-              Sign up
-            </button>
-            <span class="font-bold text-2xl leading-normal">$2,5000,000</span>
+        </div>
+        <div class="bg-[#DDC7BB] overflow-auto rounded-[18px]">
+          <img
+            src="img/popular-2.png"
+            class="w-full"
+            alt="Beautiful house with a pool"
+          />
+          <div class="flex flex-col gap-6 p-6">
+            <div class="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6 max-w-full h-auto"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="font-bold font-montserrat text-xl leading-normal"
+                >Beverly Hills, California</span
+              >
+            </div>
+            <div class="flex gap-x-9">
+              <div class="flex gap-2">
+                <img
+                  src="img/rooms.png"
+                  class="bg-white p-[2px] rounded-[4px] object-contain"
+                  alt=""
+                />
+                <span>3 Rooms</span>
+              </div>
+              <div class="flex gap-2">
+                <img
+                  src="img/size.png"
+                  class="bg-white p-[2px] rounded-[4px] object-contain"
+                  alt=""
+                />
+                <span>1,500 sq ft</span>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <button
+                class="font-semibold text-sm px-5 py-2.5 rounded-lg bg-[#2B1B12] text-white"
+              >
+                Sign up
+              </button>
+              <span class="font-bold text-2xl leading-normal text-[#4F352]"
+                >$850,000</span
+              >
+            </div>
+          </div>
+        </div>
+        <div class="bg-[#DDC7BB] overflow-auto rounded-[18px]">
+          <img
+            src="img/popular-3.png"
+            class="w-full"
+            alt="Beautiful house with a pool"
+          />
+          <div class="flex flex-col gap-6 p-6">
+            <div class="flex gap-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+                class="size-6 max-w-full h-auto"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="m11.54 22.351.07.04.028.016a.76.76 0 0 0 .723 0l.028-.015.071-.041a16.975 16.975 0 0 0 1.144-.742 19.58 19.58 0 0 0 2.683-2.282c1.944-1.99 3.963-4.98 3.963-8.827a8.25 8.25 0 0 0-16.5 0c0 3.846 2.02 6.837 3.963 8.827a19.58 19.58 0 0 0 2.682 2.282 16.975 16.975 0 0 0 1.145.742ZM12 13.5a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+              <span class="font-bold font-montserrat text-xl leading-normal"
+                >Palo Alto, California</span
+              >
+            </div>
+            <div class="flex gap-x-9">
+              <div class="flex gap-2">
+                <img
+                  src="img/rooms.png"
+                  class="bg-white p-[2px] rounded-[4px] object-contain"
+                  alt=""
+                />
+                <span>6 Rooms</span>
+              </div>
+              <div class="flex gap-2">
+                <img
+                  src="img/size.png"
+                  class="bg-white p-[2px] rounded-[4px] object-contain"
+                  alt=""
+                />
+                <span>4,000 sq ft</span>
+              </div>
+            </div>
+            <div class="flex justify-between">
+              <button
+                class="font-semibold text-sm px-5 py-2.5 rounded-lg bg-[#2B1B12] text-white"
+              >
+                Sign up
+              </button>
+              <span class="font-bold text-2xl leading-normal text-[#4F352]"
+                >$3,7000,000</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section
+      class="max-w-[1920px] px-[3.2rem] mx-auto pb-16 pt-16 bg-[#FEF7F2]"
+    >
+      <h2 class="font-extrabold text-4xl leading-[56px] mb-16 text-center">
+        What People Say <br />
+        About Dwello
+      </h2>
+      <div class="grid grid-cols-3 gap-16">
+        <div class="bg-[#DDC7BB] overflow-auto rounded-[18px]">
+          <img
+            src="img/tile-1.png"
+            class="w-full"
+            alt="Beautiful house with a pool"
+          />
+          <div class="flex flex-col gap-6 p-6">
+            <div class="flex gap-2">
+              <img src="img/Mask group.png" class="object-contain" alt="" />
+              <div class="flex flex-col justify-around">
+                <span
+                  class="font-bold text-[20px] leading-none font-montserra content-center"
+                  >Sarah Nguyen</span
+                >
+                <span>San Francisco</span>
+              </div>
+              <div class="flex items-end">
+                <div
+                  class="flex bg-white gap-1 py-0.5 px-1 justify-center rounded-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="#FFC71E"
+                    class="size-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="font-semibold text-[16px] leading-[130%] text-[#4F3527]">
+              Dwello truly cares about their clients. They listened to my needs
+              and preferences and helped me find the perfect home in the Bay
+              Area. Their professionalism and attention to detail are unmatched.
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#DDC7BB] overflow-auto rounded-[18px]">
+          <img
+            src="img/tile-2.png"
+            class="w-full"
+            alt="Beautiful house with a pool"
+          />
+          <div class="flex flex-col gap-6 p-6">
+            <div class="flex gap-2">
+              <img src="img/Mask group.png" class="object-contain" alt="" />
+              <div class="flex flex-col justify-around">
+                <span
+                  class="font-bold text-[20px] leading-none font-montserra content-center"
+                  >Sarah Nguyen</span
+                >
+                <span>San Francisco</span>
+              </div>
+              <div class="flex items-end">
+                <div
+                  class="flex bg-white gap-1 py-0.5 px-1 justify-center rounded-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="#FFC71E"
+                    class="size-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>4.5</span>
+                </div>
+              </div>
+            </div>
+            <p class="font-semibold text-[16px] leading-[130%] text-[#4F3527]">
+              I had a fantastic experience working with Dwello. Their expertise
+              and personalized service exceeded my expectations. I found my
+              dream home quickly and smoothly. Highly recommended!
+            </p>
+          </div>
+        </div>
+        <div class="bg-[#DDC7BB] overflow-auto rounded-[18px]">
+          <img
+            src="img/tile-3.png"
+            class="w-full"
+            alt="Beautiful house with a pool"
+          />
+          <div class="flex flex-col gap-6 p-6">
+            <div class="flex gap-2">
+              <img src="img/Mask group-2.png" class="object-contain" alt="" />
+              <div class="flex flex-col justify-around">
+                <span
+                  class="font-bold text-[20px] leading-none font-montserra content-center"
+                  >Emily Johnson</span
+                >
+                <span>Los Angeles</span>
+              </div>
+              <div class="flex items-end">
+                <div
+                  class="flex bg-white gap-1 py-0.5 px-1 justify-center rounded-md"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="#FFC71E"
+                    class="size-6"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10.788 3.21c.448-1.077 1.976-1.077 2.424 0l2.082 5.006 5.404.434c1.164.093 1.636 1.545.749 2.305l-4.117 3.527 1.257 5.273c.271 1.136-.964 2.033-1.96 1.425L12 18.354 7.373 21.18c-.996.608-2.231-.29-1.96-1.425l1.257-5.273-4.117-3.527c-.887-.76-.415-2.212.749-2.305l5.404-.434 2.082-5.005Z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+
+                  <span>5.0</span>
+                </div>
+              </div>
+            </div>
+            <p class="font-semibold text-[16px] leading-[130%] text-[#4F3527]">
+              Dwello made my dream of owning a home a reality! Their team
+              provided exceptional support and guided me through every step of
+              the process. I couldn't be happier with my new home!
+            </p>
           </div>
         </div>
       </div>
